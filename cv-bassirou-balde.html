@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Bassirou Balde - Développeur .NET Core & MAUI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            font-size: 14px;
+        }
+        
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #007bff;
+            font-weight: bold;
+        }
+        
+        .header h2 {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.9em;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.4em;
+            color: #007bff;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #eee;
+            font-weight: bold;
+        }
+        
+        .profil-text {
+            text-align: justify;
+            line-height: 1.7;
+            color: #555;
+        }
+        
+        .experience-item, .formation-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 3px solid #007bff;
+            padding-bottom: 15px;
+        }
+        
+        .experience-title {
+            font-weight: bold;
+            color: #333;
+            font-size: 1.1em;
+        }
+        
+        .experience-company {
+            color: #007bff;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        
+        .experience-date {
+            color: #666;
+            font-style: italic;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .experience-desc {
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category h4 {
+            color: #007bff;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding: 5px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+        
+        .skill-name {
+            font-weight: 500;
+        }
+        
+        .skill-level {
+            color: #007bff;
+            font-weight: bold;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .project-item {
+            border: 1px solid #eee;
+            padding: 15px;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 8px;
+        }
+        
+        .project-tech {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        
+        .project-desc {
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .languages {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .language-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            min-width: 120px;
+        }
+        
+        .language-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .language-level {
+            color: #007bff;
+            font-size: 0.9em;
+        }
+        
+        @media print {
+            body {
+                font-size: 12px;
+            }
+            .cv-container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .section {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- En-tête -->
+        <div class="header">
+            <h1>BASSIROU BALDE</h1>
+            <h2>Développeur Web & Mobile | .NET Core C# & MAUI</h2>
+            <div class="contact-info">
+                <span>📍 Agadir, Maroc</span>
+                <span>📞 +212 771 303 389</span>
+                <span>✉️ bachirdev.pro@gmail.com</span>
+                <span>💼 Auto-entrepreneur Freelance</span>
+            </div>
+        </div>
+
+        <!-- Profil -->
+        <div class="section">
+            <h3 class="section-title">PROFIL PROFESSIONNEL</h3>
+            <p class="profil-text">
+                Développeur web et mobile passionné, spécialisé dans les technologies Microsoft .NET Core C# et MAUI. 
+                Auto-entrepreneur freelance avec 4 années d'expérience dans la création d'applications modernes et performantes. 
+                Expert dans le développement d'APIs REST, d'applications mobiles cross-platform et de sites web responsives. 
+                Maîtrise également WordPress, Shopify et les technologies frontend modernes pour offrir des solutions complètes à mes clients.
+            </p>
+        </div>
+
+        <!-- Compétences -->
+        <div class="section">
+            <h3 class="section-title">COMPÉTENCES TECHNIQUES</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Backend & Mobile</h4>
+                    <div class="skill-item">
+                        <span class="skill-name">.NET Core C#</span>
+                        <span class="skill-level">90%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">MAUI</span>
+                        <span class="skill-level">85%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">REST API</span>
+                        <span class="skill-level">88%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SQL Server</span>
+                        <span class="skill-level">80%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Frontend</h4>
+                    <div class="skill-item">
+                        <span class="skill-name">HTML5</span>
+                        <span class="skill-level">90%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">CSS3</span>
+                        <span class="skill-level">90%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-level">65%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>CMS & Plateformes</h4>
+                    <div class="skill-item">
+                        <span class="skill-name">WordPress</span>
+                        <span class="skill-level">80%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Shopify</span>
+                        <span class="skill-level">75%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Firebase</span>
+                        <span class="skill-level">70%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Expérience -->
+        <div class="section">
+            <h3 class="section-title">EXPÉRIENCE PROFESSIONNELLE</h3>
+            
+            <div class="experience-item">
+                <div class="experience-title">Développeur Freelance</div>
+                <div class="experience-company">Auto-entrepreneur</div>
+                <div class="experience-date">2023 - Présent</div>
+                <div class="experience-desc">
+                    • Développement d'applications mobiles cross-platform avec .NET MAUI<br>
+                    • Création d'APIs REST avec .NET Core pour diverses applications<br>
+                    • Développement de sites web WordPress personnalisés<br>
+                    • Création de sites vitrine avec HTML5, CSS3 et JavaScript<br>
+                    • Intégration de solutions e-commerce Shopify<br>
+                    • Gestion complète de projets clients de A à Z
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-title">Développeur .NET Junior</div>
+                <div class="experience-company">Projets & Stages</div>
+                <div class="experience-date">2021 - 2022</div>
+                <div class="experience-desc">
+                    • Apprentissage approfondi du framework .NET Core<br>
+                    • Développement d'applications web avec ASP.NET MVC<br>
+                    • Initiation au développement mobile avec MAUI<br>
+                    • Manipulation de bases de données SQL Server<br>
+                    • Participation à des projets collaboratifs
+                </div>
+            </div>
+        </div>
+
+        <!-- Projets -->
+        <div class="section">
+            <h3 class="section-title">PROJETS RÉALISÉS</h3>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <div class="project-title">Chez Daba - Site Restaurant</div>
+                    <div class="project-tech">WordPress</div>
+                    <div class="project-desc">
+                        Site web complet pour restaurant avec menu interactif, galerie photos. 
+                        Interface responsive et optimisée SEO.
+                        <br><strong>URL :</strong> www.chezdaba.com
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-title">Planète Alpha - Site Moderne</div>
+                    <div class="project-tech">HTML5, CSS3, JavaScript</div>
+                    <div class="project-desc">
+                        Site moderne et responsive avec animations CSS et JS, formulaire de contact et design adaptatif. 
+                        Optimisé pour les performances et l'accessibilité.
+                        <br><strong>URL :</strong> www.planetealpha.com
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-title">API Gestion Inventaire</div>
+                    <div class="project-tech">.NET Core, SQL Server</div>
+                    <div class="project-desc">
+                        API REST complète pour gestion d'inventaire avec authentification JWT, CRUD operations. 
+                        Architecture clean et testable.
+                    </div>
+                </div>
+                
+               <!--- <div class="project-item">
+                    <div class="project-title">App Mobile E-commerce</div>
+                    <div class="project-tech">.NET MAUI, Firebase, SQLite</div>
+                    <div class="project-desc">
+                        Application mobile cross-platform avec catalogue produits, panier d'achat, paiement intégré et synchronisation cloud. 
+                        Interface native iOS/Android.
+                    </div>
+                </div>-->
+            </div>
+        </div>
+
+        <!-- Formation -->
+        <div class="section">
+            <h3 class="section-title">FORMATION</h3>
+            
+            <div class="formation-item">
+                <div class="experience-title">Formation Développement .NET</div>
+                <div class="experience-company">Autodidacte & Certifications Microsoft</div>
+                <div class="experience-date">2020 - 2023</div>
+                <div class="experience-desc">
+                    Formation intensive en développement .NET Core, MAUI, C# et technologies Microsoft. 
+                    Certification en développement d'applications modernes.
+                </div>
+            </div>
+            
+            <div class="formation-item">
+                <div class="experience-title">Développement Web & Mobile</div>
+                <div class="experience-company">Formations en ligne & Projets pratiques</div>
+                <div class="experience-date">2020 - 2021</div>
+                <div class="experience-desc">
+                    Apprentissage des fondamentaux du développement web (HTML, CSS, JavaScript, ASP.NET Core, C#) 
+                    et initiation au développement mobile.
+                </div>
+            </div>
+        </div>
+
+        <!-- Langues -->
+        <div class="section">
+            <h3 class="section-title">LANGUES</h3>
+            <div class="languages">
+                <div class="language-item">
+                    <span class="language-name">Français</span>
+                    <span class="language-level">Courant</span>
+                </div>
+            
+                <div class="language-item">
+                    <span class="language-name">Anglais</span>
+                    <span class="language-level">Intermédiaire</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div class="section">
+            <h3 class="section-title">SERVICES PROPOSÉS</h3>
+            <div class="experience-desc">
+                <strong>• Développement d'applications mobiles</strong> cross-platform avec .NET MAUI<br>
+                <strong>• Création d'APIs REST</strong> robustes et sécurisées avec .NET Core<br>
+                <strong>• Développement de sites web</strong> responsives et modernes<br>
+                <strong>• Intégration WordPress</strong> avec thèmes personnalisés<br>
+                <strong>• Solutions e-commerce</strong> Shopify et développement sur mesure<br>
+                <strong>• Consultation technique</strong> et audit de code<br>
+                <strong>• Maintenance et support</strong> d'applications existantes
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Script pour l'impression automatique lors de l'ouverture
+        window.onload = function() {
+            // Décommenter la ligne suivante pour impression automatique
+            // window.print();
+        }
+    </script>
+</body>
+</html>
